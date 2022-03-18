@@ -24,23 +24,29 @@
             <div>
                 <form> 
                     <h2>Mande uma mansagem:</h2>
-
+                    <div>
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" onkeyup="validaNome()">
                     <div id='txtNome'>
 
                     </div>
                     </form>
-                
+
+                    </div>
+                    
+                    <div>
                     <label for="email">E-mail:</label>
                     <input type="email" id="email" onkeyup="validaEmail()">
                     <div id="txtEmail"></div>
+                    </div>
                 
+                    <div>
                     <label for="assunto">Assunto:</label>
                     <textarea name="assunto" id="assunto"cols="30" rows="10" onkeyup="validaAssunto()"></textarea>
                     <div id="txtAssunto"></div>
+                    </div>
 
-                    <buttonEnviar</button>                
+                    <button onclick="enviar()">Enviar</button>                
                                       
                     </form>
 
@@ -63,7 +69,7 @@
     </p>    
 </footer>    
 
-<script src="asstes/js/script"></script>
+<script src="assets/js/script.js"></script>
 
 </body>
 </html>

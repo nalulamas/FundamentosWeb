@@ -1,8 +1,10 @@
 let nome = document.querySelector('#imput.nome')
-
 let email = document.querySelector('#imput.email')
-
 let assunto = document.querySelector('#imput.assunto')
+
+let nomeOk = false
+let emailOk = false
+let assuntoOk = false
 
 nome.style.width = '100%'
 email.style.width= '100%'
@@ -15,6 +17,7 @@ function validaNome() {
     }else{
         txt.innerHTML ='Nome válido'
         txt.style.color ='green'
+        nomeOk = true
     }
 }
 
@@ -26,11 +29,24 @@ function validaEmail(){
     }else{
         txtEmail.innerHTML = 'E-mail válido'
         txtEmail.style.color ='green'
+        emailOk = true
     }
 }
  function validaAssunto(){
      let txtAssunto = document.querySelector('#txtAssunto')
      if(assunto.value.length >= 100 ){
-         txtAssunto.innerHTML = 'Texto muito grande'
+         txtAssunto.innerHTML = 'Tamanho inválido'
+         txtAssunto.style.display = 'block'
+     }else{
+         txtAssunto.style.display = 'none'
+         assuntoOk = true
+     }
+ }
+
+ function enviar(){
+     if(nome == true && emailOk && assunto ==true){
+         alert ('Formulário enviado com sucesso!')
+     }else{
+         alert('Preencha o formulário corretamente antes de enviar...')
      }
  }
