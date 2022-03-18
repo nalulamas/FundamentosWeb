@@ -1,0 +1,55 @@
+/* Estilo do index*/
+body{
+    background-color:#FDDAEA;
+    color: #47001F
+   
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow:row;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+#menu li{
+    display: inline;
+    padding: 20px;   
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #9F255A;
+    font-size: 30px;
+}
+
+#menu li a:hover{
+    color: #FF73B0;
+}
+.p-30{
+    padding: 30px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh-250{
+    width:250px;
+    height:250px;
+}
+.tm-social{
+    width: 30px;
+    height: 30px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
